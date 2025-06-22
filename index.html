@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sugar & Steel Co. Vending</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff7f9;
+      color: #333;
+    }
+    header {
+      background-color: #f3e8ff;
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      max-width: 180px;
+    }
+    h1, h2 {
+      margin: 0.5em 0;
+    }
+    section {
+      padding: 2rem;
+    }
+    .shop-item, .testimonial, .gallery-img {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .shop-item button, .shop-item a {
+      margin: 0.5rem 0.5rem 0 0;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #cdb4db;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/180x80.png?text=Sugar+%26+Steel+Co." alt="Sugar & Steel Co. Logo"/>
+  <h1>Sugar & Steel Co. Vending</h1>
+  <p>Black-Owned ✦ Cute ✦ Professional</p>
+</header>
+
+<section id="gallery">
+  <h2>Our Machines in Action</h2>
+  <div class="gallery-grid">
+    <div class="gallery-img"><img src="https://via.placeholder.com/300x200/FFE0F0/000000?text=Machine+1" alt="Vending machine"></div>
+    <div class="gallery-img"><img src="https://via.placeholder.com/300x200/CDF0FF/000000?text=Snacks+Display" alt="Snacks"></div>
+    <div class="gallery-img"><img src="https://via.placeholder.com/300x200/F3E5AB/000000?text=Pastel+Setup" alt="Vending event"></div>
+  </div>
+</section>
+
+<section id="shop">
+  <h2>Our Services</h2>
+  <div class="shop-item">
+    <h3>Event Vending</h3>
+    <p>Perfect for pop-ups, markets, or private parties. We bring the vibe + snacks.</p>
+    <button onclick="document.location='#contact'">Inquire Now</button>
+    <a href="#">Buy Now</a>
+  </div>
+  <div class="shop-item">
+    <h3>Permanent Machine Setup</h3>
+    <p>Let us install a vending machine in your business or space — hands-free setup and stocking.</p>
+    <button onclick="document.location='#contact'">Inquire Now</button>
+    <a href="#">Buy Now</a>
+  </div>
+  <div class="shop-item">
+    <h3>Custom Vending Design</h3>
+    <p>We’ll design a vending machine to match your brand, colors, and customer needs.</p>
+    <button onclick="document.location='#contact'">Inquire Now</button>
+    <a href="#">Buy Now</a>
+  </div>
+  <div class="shop-item">
+    <h3>Curated Snack Box</h3>
+    <p>Coming soon! A box of our favorite snacks — sweet, salty, and beautifully packed.</p>
+    <button disabled>Coming Soon</button>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What People Are Saying</h2>
+  <div class="testimonial">“These machines brought joy to our office & snacks our team actually loves!” – T.M.</div>
+  <div class="testimonial">“Professional, stylish, and dependable. Highly recommend Sugar & Steel Co.” – J.R.</div>
+  <div class="testimonial">“Our event vending was a huge hit — they made it so easy and it looked amazing!” – K.S.</div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mnqelgwp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="How can we help you?" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Sugar & Steel Co. Vending ✦ All rights reserved.
+</footer>
+
+</body>
+</html>
